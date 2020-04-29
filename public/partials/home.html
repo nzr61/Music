@@ -1,0 +1,18 @@
+<h1>Home page</h1>
+<p>
+    <a href="/#/add-album">Add a Album</a>
+</p>
+<ul>
+    <li ng-repeat='album in albums'>
+        <a class="badge badge-primary" href="/#/album/{{album._id}}">
+        {{album.name}}
+        </a>
+        <a href="/#/album/delete/{{album._id}}">
+            <i class="glyphicon glyphicon-remove"></i>
+            </a>
+            
+        </li>
+        
+</ul>
+
+    
